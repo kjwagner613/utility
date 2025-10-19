@@ -1,84 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klamath Falls Apts Available</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Klamath Falls Apts Available</title>
 </head>
 <body>
-    <div>
-  <h2>3 Bedroom for $1,900.00</h2>
-  <h3>Picture-1</h3>
-  <img src="/images/3br-1900 (1).jpg" alt="3 Bedroom Apartment">
+  <!-- Background element (image.png in images/) -->
+  <div class="page-bg" aria-hidden="true"></div>
 
-<h3>Picture-2</h3>
-<img src="/images/3br-1900 (2).jpg" alt="3 Bedroom Apartment">
-<h3>Picture-3</h3>
-<img src="/images/3br-1900 (3).jpg" alt="3 Bedroom Apartment">
-<h3>Picture-4</h3>
-<img src="/images/3br-1900 (4).jpg" alt="3 Bedroom Apartment">
-<h3>Picture-5</h3>
-<img src="/images/3br-1900 (5).jpg" alt="3 Bedroom Apartment">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <!-- If you don't want the .ico shown, remove the <img> -->
+        <img class="logo" src="images/KJW-logo-castle-1024-colorCorrected-wMatt.ico" alt="KJW logo" />
+      </div>
+      <div class="heading">
+        <h1>Klamath Falls Apartments</h1>
+        <p class="lead">Comfortable rentals in Klamath Falls, Oregon — updated photos below.</p>
+        <p><a class="map-link" href="https://www.google.com/maps/place/Klamath+Falls,+OR" target="_blank" rel="noopener noreferrer">View Klamath Falls on Google Maps</a></p>
+      </div>
+    </div>
+  </header>
 
-  <h2>Other Apts for less</h2>
+  <main class="container" id="main">
+    <section class="gallery" aria-label="Apartment photos">
+      <figure>
+        <h3>3 Bedroom — $1,900</h3>
+        <img src="images/3br-1900 (1).jpg" alt="3 bedroom apartment - view 1">
+      </figure>
 
-  <h3>Picture-2</h3>
-  <img src="/images/E3 bathroom_5270b_400x600" alt="3 Bedroom Apartment">
-  
-<h3>Picture-3</h3>
-<img src="/images/E3 BEDROOM_5288b_800x533.jpg" alt="3 Bedroom Apartment">
+      <figure>
+        <h3>3 Bedroom — Living Room</h3>
+        <img src="images/3br-1900 (2).jpg" alt="3 bedroom apartment - living room">
+      </figure>
 
-<h3>Picture-4</h3>
-<img src="images/E3 lvroom_5284b_800x533.jpg" alt="3 Bedroom Apartment">
+      <figure>
+        <h3>3 Bedroom — Kitchen</h3>
+        <img src="images/3br-1900 (3).jpg" alt="3 bedroom apartment - kitchen">
+      </figure>
 
-<h3>Picture-5</h3>
-<img src="images/E3 lvroom_5291b_800x533.jpg" alt="3 Bedroom Apartment">
+      <figure>
+        <h3>3 Bedroom — Bedroom</h3>
+        <img src="images/3br-1900 (4).jpg" alt="3 bedroom apartment - bedroom">
+      </figure>
 
-<h3>Picture-6</h3>
+      <figure>
+        <h3>3 Bedroom — Bathroom</h3>
+        <img src="images/3br-1900 (5).jpg" alt="3 bedroom apartment - bathroom">
+      </figure>
 
-<img src="images/E3_kitchen_5280b_640x427.jpg" alt="3 Bedroom Apartment">
+      <!-- E3 group -->
+      <figure>
+        <h3>E3 — Bathroom</h3>
+        <img src="images/E3 bathroom_5270b_400x600.jpg" alt="E3 bathroom">
+      </figure>
 
-<h3>Picture-7</h3>
-<img src="images/E3-kitchen-rev_5278b_640x427.jpg" alt="3 Bedroom Apartment">
+      <figure>
+        <h3>E3 — Bedroom</h3>
+        <img src="images/E3 BEDROOM_5288b_800x533.jpg" alt="E3 bedroom">
+      </figure>
 
+      <figure>
+        <h3>E3 — Living Room</h3>
+        <img src="images/E3 lvroom_5284b_800x533.jpg" alt="E3 living room">
+      </figure>
 
+      <figure>
+        <h3>E3 — Kitchen</h3>
+        <img src="images/E3_kitchen_5280b_640x427.jpg" alt="E3 kitchen">
+      </figure>
 
-<h3>Picture-8</h3>
-<img src="images/KI 021_1067x800.JPG" alt="3 Bedroom Apartment">
+      <!-- KI images -->
+      <figure>
+        <h3>KI 021</h3>
+        <img src="images/KI 021_1067x800.JPG" alt="KI 021">
+      </figure>
+      <figure>
+        <h3>KI 022</h3>
+        <img src="images/KI 022_1067x800.JPG" alt="KI 022">
+      </figure>
+      <figure>
+        <h3>KI 023</h3>
+        <img src="images/KI 023_1067x800.JPG" alt="KI 023">
+      </figure>
+      <figure>
+        <h3>KI 024</h3>
+        <img src="images/KI 024_1067x800.JPG" alt="KI 024">
+      </figure>
+      <figure>
+        <h3>KI 025</h3>
+        <img src="images/KI 025_1067x800.JPG" alt="KI 025">
+      </figure>
+      <figure>
+        <h3>KI 027</h3>
+        <img src="images/KI 027_1067x800.JPG" alt="KI 027">
+      </figure>
+      <figure>
+        <h3>KI 028</h3>
+        <img src="images/KI 028_1067x800.JPG" alt="KI 028">
+      </figure>
+      <figure>
+        <h3>KI 029</h3>
+        <img src="images/KI 029_600x800.JPG" alt="KI 029">
+      </figure>
+      <figure>
+        <h3>KI 030</h3>
+        <img src="images/KI 030_1067x800.JPG" alt="KI 030">
+      </figure>
+    </section>
+  </main>
 
-
-
-<h3>Picture-9</h3>
-
-<img src="images/KI 022_1067x800.JPG" alt="3 Bedroom Apartment">
-
-
-<h3>Picture-10</h3>
-<img src="images/KI 023_1067x800.JPG" alt="3 Bedroom Apartment">
-
-
-<h3>Picture-11</h3>
-<img src="images/KI 024_1067x800.JPG" alt="3 Bedroom Apartment">
-
-<h3>Picture-12</h3>
-<img src="images/KI 024_1067x800.JPG" alt="3 Bedroom Apartment">
-
-<h3>Picture-13</h3>
-<img src="images/KI 025_1067x800.JPG" alt="3 Bedroom Apartment">
-
-<h3>Picture-14</h3>
-<img src="images/KI 027_1067x800.JPG" alt="3 Bedroom Apartment">
-
-<h3>Picture-15</h3>
-<img src="images/KI 028_1067x800.JPG" alt="3 Bedroom Apartment">
-
-<h3>Picture-16</h3>
-<img src="images/KI 029_600x800.JPG" alt="3 Bedroom Apartment">
-
-<h3>Picture-17</h3>
-<img src="images/KI 030_1067x800.JPG" alt="3 Bedroom Apartment">
-
-
-
+  <footer class="site-footer">
+    <div class="container">
+      <p>For other quick projects: <a href="mailto:kevin@discrete-dev.com">kevin@discrete-dev.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>
