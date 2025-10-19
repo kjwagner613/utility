@@ -117,5 +117,55 @@
       <p>For other quick projects: <a href="mailto:kevin@discrete-dev.com">kevin@discrete-dev.com</a></p>
     </div>
   </footer>
+  <script>
+(function(){
+  function createLightbox(src, alt, naturalWidth){
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.tabIndex = -1;
+
+    const card = document.createElement('div');
+    card.className = 'lightbox-card';
+
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = alt || '';
+
+    card.appendChild(img);
+    overlay.appendChild(card);
+    document.body.appendChild(overlay);
+
+    // compute desired width: double naturalWidth but no larger than 90% viewport
+    // if naturalWidth not available, fallback to 800
+    const nW = naturalWidth || img.naturalWidth || 800;
+    const desiredW = Math.min(nW * 2, Math.floor(window.innerWidth * 0.9));
+    img.style.width = desiredW + 'px';
+    img.style.height = 'auto';
+
+    // close when clicking outside the card
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) overlay.remove();
+    });
+
+    // close on Escape key
+    function onKey(e){
+      if (e.key === 'Escape') {
+        overlay.remove();
+        document.removeEventListener('keydown', onKey);
+      }
+    }
+    document.addEventListener('keydown', onKey);
+  }
+
+  // attach to all images inside .gallery
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function () {
+      // pass naturalWidth if available (helps size calculation)
+      createLightbox(this.src, this.alt, this.naturalWidth);
+    });
+  });
+})();
+</script>
 </body>
 </html>
